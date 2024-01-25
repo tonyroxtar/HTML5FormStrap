@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML From</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="row d-flex justify-content-center container-fluid w-75 border p-0 m-auto mt-3 mb-3 rounded">
+    <div class="container border-bottom p-0 bg-light">
+      <h2 class="d-block m-3">Payment form example</h2>
+    </div>
+
+    <div class="container">
+      <div class="alert alert-danger my-3" role="alert">Some fields are missing</div>
+    </div>
+
+    <div class="container m-25">
+      <div class="row">
+        <div class="col-5">
+          <div class="mb-3">
+            <label for="inputCardNumber" class="form-label">Card #</label>
+            <input type="text" class="form-control" id="inputCardNumber" aria-describedby="cardNumber"
+              placeholder="XXXXXXXXXXX" />
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mb-3">
+            <label for="cvc" class="form-label">CVC #</label>
+            <input type="text" class="form-control" id="cvc" aria-describedby="cvc" placeholder="000" />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="mb-3">
+            <label for="amount" class="form-label">Amount</label>
+            <div class="container d-flex">
+              <p class="h4">$</p><input type="text" class="form-control" id="amount" aria-describedby="amount"
+                placeholder="Amount" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container m-25">
+      <div class="row">
+        <div class="col-6">
+          <div class="mb-3">
+            <label for="InputName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="InputName" />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="mb-3">
+            <label for="InputLastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="InputLastName" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container m-25">
+      <div class="row align-items-end">
+        <div class="col-6">
+          <div class="mb-3">
+            <label for="InputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="InputCity" />
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mb-3">
+            <p>State</p>
+            <select class="form-select" aria-label="select state">
+              <option selected>Pick a state</option>
+              <option value="1">Sanatiago</option>
+              <option value="2">Antofa</option>
+              <option value="3">Pinguino</option>
+              <option value="4">Walmapu</option>
+              <option value="3">Completo Mojao</option>
+              <option value="3">Huasos</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mb-3">
+            <label for="InputPostalCode" class="form-label">Postal Code</label>
+            <input type="text" class="form-control" id="InputPostalCode" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container m-25">
+      <div class="row">
+        <div class="col-6">
+          <p>We accept:</p>
+          <div class="container bg-dark-subtle rounded d-inline p-3">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="visa" />
+              <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-visa h3"></i></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                value="mastercard" />
+              <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-mastercard h3"></i></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                value="dinersclub" />
+              <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-diners-club h3"></i></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="paypal" />
+              <label class="form-check-label" for="inlineRadio4"><i class="fa-brands fa-cc-paypal h3"></i></label>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="mb-3">
+            <label for="Textarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+            <div id="MessageHelp" class="form-text">Add any notes here.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-light m-25 border-top">
+      <div class="container d-flex justify-content-end p-3">
+        <button type="button" class="btn btn-secondary me-1">Cancel</button>
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
